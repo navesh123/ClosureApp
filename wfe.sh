@@ -12,7 +12,7 @@ make libs
 make clean all
 cd /home/testadmin/infra-problem/front-end/public
 serve.py
-xport APP_PORT="8080"
+export APP_PORT="8080"
 export STATIC_URL="http://closure-wfe"
 export QUOTE_SERVICE_URL="http://closure-quotes"
 export NEWSFEED_SERVICE_URL="http://closure-newsfeed"
