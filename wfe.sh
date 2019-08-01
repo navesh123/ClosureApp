@@ -1,4 +1,5 @@
 #!/bin/bash
+set +x
 sudo apt-get update
 sudo apt-get install openjdk-8-jre -y
 sudo apt-get install git -y
