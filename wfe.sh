@@ -11,7 +11,7 @@ cd /home/testadmin/infra-problem
 make libs
 make clean all
 cd /home/testadmin/infra-problem/front-end/public
-serve.py
+py serve.py
 export APP_PORT="8080"
 export STATIC_URL="http://closure-wfe"
 export QUOTE_SERVICE_URL="http://closure-quotes"
