@@ -5,7 +5,6 @@ git clone https://github.com/ThoughtWorksInc/infra-problem
 sudo curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -o /usr/local/bin/lein
 sudo chmod a+x /usr/local/bin/lein
 cd /home/testadmin/infra-problem
-make test
 make libs
 make clean all
 cd /home/testadmin/infra-problem/front-end/public
