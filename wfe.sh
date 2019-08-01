@@ -1,6 +1,11 @@
 #!/bin/bash
 
-sudo apt-get update  && sudo apt-get install openjdk-8-jre -y && sudo apt-get install git -y && sudo apt-get install make -y && sudo apt-get install make-guile -y && sudo apt-get install python3
+sudo apt-get update
+sudo apt-get install openjdk-8-jre -y
+sudo apt-get install git -y
+sudo apt-get install make -y
+sudo apt-get install make-guile -y
+sudo apt-get install python3
 git clone https://github.com/ThoughtWorksInc/infra-problem
 sudo curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -o /usr/local/bin/lein
 sudo chmod a+x /usr/local/bin/lein
