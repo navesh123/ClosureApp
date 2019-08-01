@@ -1,10 +1,13 @@
 #!/bin/bash
 set +x
+# Check for root privs
+if [ $UID != 0 ]; then
+  echo "You must run $0 as root"
+  exit 1
+fi
+
 sudo apt-get update
-sudo apt-get install openjdk-8-jre -y
-sudo apt-get install git -y
-sudo apt-get install make -y
-sudo apt-get install make-guile -y
+sudo apt-get install openjdk-8-jre git make make-guile -y
 git clone "https://github.com/ThoughtWorksInc/infra-problem"
 sudo curl "https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein" -o /usr/local/bin/lein
 sudo chmod a+x /usr/local/bin/lein
